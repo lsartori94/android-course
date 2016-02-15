@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Listeners</string>
+    <string name="btnClear">Press to Clear</string>
+    <string name="btnToast">Press to Toast</string>
+    <string name="hint">Enter Your Text</string>
+    <string name="btnClearHint">This button will clear the text in the above text field</string>
+    <string name="btnToastHint">This button will toast the text in the above text field</string>
+</resources>
