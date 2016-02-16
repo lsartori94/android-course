@@ -32,4 +32,5 @@
         android:id="@+id/btnToast"
         android:layout_below="@+id/etToToast"
         android:layout_alignRight="@+id/etToToast" />
+
 </RelativeLayout>

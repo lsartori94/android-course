@@ -1,10 +1,12 @@
 package com.example.lucasartori.listeners;
 
+import android.content.Context;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -36,8 +38,35 @@ public class MainActivity extends AppCompatActivity {
             // Set Hints
             clearButton.setOnLongClickListener(buttonHintListener);
             toastButton.setOnLongClickListener(buttonHintListener);
+        }
+    }
 
-            
+    private class ButtonOnClickListener implements View.OnClickListener {
+        @Override
+        public void onClick(View v) {
+            if (v.getId() == R.id.btnClr) {
+                toToastText.setText("");
+            }
+            else if (v.getId() == R.id.btnToast) {
+                Toast.makeText(v.getContext(), toToastText.getText().toString(), Toast.LENGTH_SHORT);
+            }
+        }
+    }
+
+    private class ButtonHintOnClickListener implements  View.OnLongClickListener {
+        // return true so that it will consume the event and the onClick will not recieve a callback afterwards
+        @Override
+        public boolean onLongClick(View v) {
+            String hint = null;
+            Context context = v.getContext();
+            if (v.getId() == R.id.btnToast) {
+                hint = context.getString(R.string.btnToastHint);
+            }
+            else if (v.getId() == R.id.btnClr) {
+                hint = context.getString(R.string.btnClearHint);
+            }
+            Toast.makeText(context, hint, Toast.LENGTH_SHORT);
+            return true;
         }
     }
 }
