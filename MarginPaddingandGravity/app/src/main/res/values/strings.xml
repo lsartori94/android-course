@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Margin Padding and Gravity</string>
+
+    <string name="textView1">TextView 1</string>
+    <string name="textView2">TextView 2</string>
+    <string name="textView3">TextView 3</string>
+
+</resources>
