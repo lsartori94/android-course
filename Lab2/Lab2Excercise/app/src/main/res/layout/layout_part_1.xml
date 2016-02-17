@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Main_Activity"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/rlTopContainer"
+        android:background="@android:color/holo_purple">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/tvTopLeft"
+            android:text="@string/tvTopLeft"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentLeft="true"
+            android:background="@android:color/holo_orange_light"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/tvBelow"
+            android:text="@string/tvBelow"
+            android:layout_alignLeft="@id/tvTopLeft"
+            android:layout_alignRight="@id/tvTopLeft"
+            android:layout_below="@id/tvTopLeft"
+            android:background="@android:color/holo_blue_light" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/btnTopRight"
+            android:text="@string/btnTopRight"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentRight="true"
+            android:background="@android:color/holo_red_dark"/>
+
+    </RelativeLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/tvBelowRL"
+        android:text="@string/tvBelowRL"
+        android:background="@android:color/holo_green_dark"/>
+
+</LinearLayout>

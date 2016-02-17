@@ -1,0 +1,18 @@
+<resources>
+
+    <string name="app_name">Lab 2 Excercise</string>
+
+    // Layout 1
+    <string name="tvTopLeft">top left</string>
+    <string name="tvBelow">below</string>
+    <string name="btnTopRight">top right</string>
+    <string name="tvBelowRL">text below relative layout</string>
+
+    // Layout 2
+    <string name="btnText">Click me</string>
+
+    // Layout 3
+    <string name="tvFirst">first</string>
+    <string name="tvSecond">second</string>
+
+</resources>
