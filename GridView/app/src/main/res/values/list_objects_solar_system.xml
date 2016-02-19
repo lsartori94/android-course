@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="list_objects_solar_system">
+        <item>Sun</item>
+        <item>Mercury</item>
+        <item>Venus</item>
+        <item>Earth</item>
+        <item>Mars</item>
+        <item>Ceres</item>
+        <item>Jupiter</item>
+        <item>Ganymede</item>
+        <item>Callisto</item>
+        <item>Saturn</item>
+        <item>Uranus</item>
+        <item>Neptune</item>
+        <item>Centaurs</item>
+        <item>Kuiper belt</item>
+        <item>Pluto</item>
+        <item>Luca</item>
+        <item>Mock</item>
+        <item>Hello</item>
+    </string-array>
+</resources>
